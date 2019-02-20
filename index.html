@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>New York Times Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" id="header">
+                <i class="far fa-newspaper"></i> New York Times Search
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" id="title">
+                Search Parameters
+            </div>
+        </div>
+        <div>
+            <form>
+                <div class="form-group">
+                    <label for="search-term">Search Term:</label>
+                    <input type="text" class="form-control" id="search-term" placeholder="Ex. Election 2020">            
+                </div>
+                <div class="form-group">
+                    <label for="records">Number of Records to Retrieve</label>
+                    <select class="form-control" id="records">
+                        <option>1</option>
+                        <option>5</option>
+                        <option>10</option>
+                        <option>15</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="start-year">Start Year (Optional):</label>
+                    <input type="password" class="form-control" id="start-year">
+                </div>
+                <div class="form-group">
+                    <label for="end-year">End Year (Optional):</label>
+                    <input type="password" class="form-control" id="end-year">
+                </div>
+                <button type="submit" class="btn btn-primary">Search</button>
+                <button type="submit" class="btn btn-secondary">Clear Results</button>
+            </form>              
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" id="title">
+                Top Articles
+            </div>
+        </div>
+        <div id="input-articles">
+            <!-- input articles to go in here -->
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" id="footer">
+                Made with lots and lots of love!
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
